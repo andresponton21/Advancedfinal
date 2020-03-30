@@ -13,13 +13,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ethereumgb/create2-upgrade.git"
+    "url": "git+https://github.com/andresponton21/Advancedfinal/blob/master/contracts/Verify.sol"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ethereumgb/create2-upgrade/issues"
+    "url": "https://github.com/andresponton21/Advancedfinal/blob/master/contracts/Verify.sol"
   },
-  "homepage": "https://github.com/ethereumgb/create2-upgrade#readme"
+  "homepage": "https://github.com/andresponton21/Advancedfinal/blob/master/contracts/Verify.sol"
 }
