@@ -1,7 +1,7 @@
 {
-  "name": "create2-upgrade",
+  "name": "Verify",
   "version": "1.0.0",
-  "description": "Upgrade a contract using create2",
+  "description": "use Verify",
   "main": "index.js",
   "dependencies": {
     "ethers": "^4.0.46",

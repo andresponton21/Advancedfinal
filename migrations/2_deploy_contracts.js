@@ -1,7 +1,6 @@
-const Springboard = artifacts.require("Springboard");
-const Wallet = artifacts.require("Wallet");
-const WalletV2 = artifacts.require("WalletV2");
+const Verify = artifacts.require("Verify");
+
 
 module.exports = function(deployer) {
-  deployer.deploy(Springboard);
+  deployer.deploy(Verify);
 };

@@ -1,6 +1,5 @@
-const Springboard = artifacts.require('Springboard');
-const Wallet = artifacts.require('Wallet');
-const WalletV2 = artifacts.require('WalletV2');
+const Springboard = artifacts.require('Verify');
+
 const ethers = require('ethers');
 const utils = ethers.utils;
 
@@ -15,16 +14,16 @@ function calculateAddress(creatorAddress, salt, initCode) {
             initCodeHash])), 12));
 }
 
-// Springboard contract is a factory of wallet contracts
-contract("Springboard", accounts => {
-   let springboard;
+
+contract("Verify", accounts => {
+   let Verify;
    before(async() => {
-      springboard = await Springboard.deployed(); 
+      Verify = await Verify.deployed(); 
    });
 
    it("Upgrade wallet v1 to v2 should work", async () => {
       let runtimeCode = Wallet.deployedBytecode;
-      let tx = await springboard.execute(runtimeCode);
+      let tx = await Verify.execute(runtimeCode);
       assert.equal(tx.logs.length, 1, "should have 1 event log");
       assert.equal(tx.logs[0].event, "ContractCreated", "different event");
 
